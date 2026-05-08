@@ -1,0 +1,8 @@
+services:
+  web-service:
+    image: devopsdockeruh/simple-web-service
+    command: server
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./text.log:/usr/src/app/text.log
