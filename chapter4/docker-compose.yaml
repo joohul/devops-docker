@@ -1,4 +1,9 @@
 services:
+  express-app:
+    image: joohul/devops-testapp
+    ports:
+      - "8080:8080"  
+
   watchtower:
     image: nickfedor/watchtower
     environment:
